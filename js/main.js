@@ -3,11 +3,8 @@
 
 (function () {
 
-  var navElem,
-      blocks;
-
   function init () {
-    var h2Elem,
+    var h2Elems,
           i;
 
     // Very simple way to remove the no-js class on html element (will not work if html element had more than one class)
@@ -21,22 +18,15 @@
 
     // If the device is a touch device, we have to display nav titles by default as there is no rollover
     if (is_touch_device()) {
-      refreshNavAndBlocks();
+      h2Elems = document.getElementsByTagName("h2");
       
-      for (i = blocks.length - 1; i >= 0; i = i - 1) {
-        h2Elem = blocks[i].getElementsByTagName("h2")[0];
-        h2Elem.style.visibility = "visible";
+      for (i = h2Elems.length - 1; i >= 0; i = i - 1) {
+        h2Elems[i].style.visibility = "visible";
       }
     }
 
     // First call on the resizeHandler in order to create the layout
     resizeHandler();
-  }
-
-  // Get the nav and all a blocks dom elements
-  function refreshNavAndBlocks () {
-    navElem = document.getElementsByTagName("nav")[0];
-    blocks = navElem.getElementsByTagName("a");
   }
 
   // Check wether or not the device is a touch device
@@ -90,12 +80,15 @@
 
   // Handle window resize
   function resizeHandler () {
-    var navWidth,
+    var navElem,
+        blocks,
+        navWidth,
         blockBaseWidth,
         newBlockWidth,
         i;
 
-    refreshNavAndBlocks();
+    navElem = document.getElementsByTagName("nav")[0];
+    blocks = navElem.getElementsByTagName("a");
 
     navWidth = navElem.offsetWidth;
     // The minimum width of nav blocks
