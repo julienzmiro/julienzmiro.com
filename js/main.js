@@ -10,6 +10,9 @@
     var h2Elem,
           i;
 
+    // Very simple way to remove the no-js class on html element (will not work if html element had more than one class)
+    document.getElementsByTagName("html")[0].removeAttribute("class");
+
     // Flush the event cache
     addEvent(window, 'unload', EventCache.flush);
     
