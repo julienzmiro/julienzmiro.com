@@ -14,9 +14,12 @@ $extraDarkColor: #893e0c;
 
 html {
   -webkit-font-smoothing: antialiased;
+  height: 100%;
 }
 
 body {
+  height: 100%;
+  position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -25,11 +28,21 @@ body {
 
 section {
   width: 90%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  display: block;
   background-color: $darkColor;
   color: $lightColor;
-  margin: 1%;
+  margin: 1.5% 1%;
   padding: 12% 4% 8%;
   border-radius: 3px;
+}
+
+.no-js section {
+  margin: 1%;
+  padding: 12% 4% 8%;
 }
 
 h1 {

@@ -832,50 +832,64 @@ textarea {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000315}}
 html {
   -webkit-font-smoothing: antialiased;
+  height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000320}}
 body {
+  height: 100%;
+  position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 26px;
   background-color: #f5ede7;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000329}}
 section {
   width: 90%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  display: block;
   background-color: #f48840;
   color: #f5ede7;
-  margin: 1%;
+  margin: 1.5% 1%;
   padding: 12% 4% 8%;
   border-radius: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000343}}
+.no-js section {
+  margin: 1%;
+  padding: 12% 4% 8%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000348}}
 h1 {
   color: #893e0c;
   margin: 0;
   font-size: 30px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000354}}
 header {
   margin-bottom: 25px;
   text-align: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000359}}
 header p {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000363}}
 nav {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000367}}
 nav a {
   display: block;
   width: 100%;
@@ -895,12 +909,12 @@ nav a {
   -o-transition: background-color 0.3s;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000383}}
 nav a:hover {
   background-color: rgba(0, 0, 0, 0.07);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000387}}
 h2 {
   font-size: 18px;
   font-weight: normal;
@@ -908,18 +922,18 @@ h2 {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000394}}
 nav a:hover h2 {
   visibility: visible;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000399}}
 a {
   color: #f5ede7;
   font-weight: 800;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/julienzmiro\/Sites\/jz\/jzv13\/julienzmiro\.com\/sass\/screen\.scss}line{font-family:\00003104}}
 a:hover {
   text-decoration: none;
 }

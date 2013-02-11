@@ -1,6 +1,3 @@
-// @/codekit-prepend "vendor/jquery-1.9.0.min.js"
-// @/codekit-prepend "plugins.js"
-
 (function () {
 
   function init () {
@@ -85,6 +82,8 @@
         navWidth,
         blockBaseWidth,
         newBlockWidth,
+        margH,
+        sectionElem,
         i;
 
     navElem = document.getElementsByTagName("nav")[0];
@@ -101,6 +100,12 @@
       blocks[i].style.width = newBlockWidth + "px";
     }
 
+    // Compute the margin-top / margin-bottom based on the window width
+    margH = window.innerWidth * 0.01;
+    sectionElem = document.getElementsByTagName("section")[0];
+    sectionElem.style.marginTop = margH + "px";
+    sectionElem.style.marginBottom = margH + "px";
+
   }
 
   // Check wether or not the document is ready until it is ready
@@ -111,33 +116,3 @@
     }
   }, 10);
 })();
-
-
-// Jquery and Modernizr version
-// $(document).ready(function () {
-
-//   function resizeHandler () {
-
-//     var navWidth = $("#container nav").width();
-//     var blocBaseWidth = 330;
-//     var newBlocWidth = Math.floor(blocBaseWidth + (navWidth % blocBaseWidth) / Math.floor(navWidth / blocBaseWidth)) - 1;
-
-//     $("#container a").width(newBlocWidth);
-
-//   }
-
-//   function init () {
-
-//     $(window).bind("resize", resizeHandler);
-    
-//     if (Modernizr.touch){
-//       $("#container a h2").css("visibility", "visible");
-//     }
-
-//     resizeHandler();
-
-//   }
-
-//   init();
-  
-// });
